@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package your_package_name;
+
+message PayloadMessage {
+  enum MessageType {
+    TYPE_UNKNOWN = 0;
+    TYPE_CAPITAL = 1;
+    TYPE_SMALL = 2;
+  }
+
+  string payload = 1;
+  MessageType type = 2;
+}
+
